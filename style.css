@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-image: url(bongocatCENTER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; */
+}
+body.right {
+    background-image: url(bongocatRIGHT.png);
+}
+body.left {
+    background-image: url(bongocatLEFT.png);
+}
+
+.title {
+    font-family: 'Quicksand', "monospace";
+    font-weight: bold;
+    color: rgb(117, 117, 117);
+    font-size: 2rem;
+    text-shadow: 2px 5px 5px white, 1px 1px 0px white;
+}
+.keys {
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    margin-left: 40%;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 5px;
+}
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin: 2px;
+    height: 150px;
+    cursor: pointer;
+    outline: none;
+}
+button:nth-of-type(even) {
+    background-color: black;
+    color: #fff;
+}
+button:focus {
+    outline: none;
+}
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0px 0px 7px 3px steelblue;
+}
+button:activated {
+    box-shadow: 0px 0px 7px 3px steelblue;
+}
+
+.footer a:active, .footer a:visited {
+    color: black;
+}
+
+.footer a:hover {
+    color: greenyellow;
+}
+
+@media (max-width: 950px) {
+    .keys {
+        width: 90%;
+    }
+}
+@media (max-width: 800px) {
+    .keys {
+        width: 80%;
+    }
+}
